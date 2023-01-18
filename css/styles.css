@@ -1,8 +1,9 @@
+/* GLOBAL STYLES */
 * {
     box-sizing: border-box;
 }
 *:focus {
-    outline: 3px dotted #075A60;
+    outline: 3px dotted #de2e54;
     outline-offset: 3px;
 }
 html {
@@ -14,6 +15,7 @@ body {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 150%;
+    color: #fff;
 }
 .container {
     width: 100%;
@@ -23,7 +25,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-/* HEADER */
+
+
+/* LOGO STYLES */
 .site-header {
     display: flex;
     align-items: center;
@@ -31,31 +35,35 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.header-logo-link {
+.site-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
     color: #222222;
     transition: color 0.4s ease,
         opacity 0.4s ease;
 }
-.header-logo-link:hover {
+.site-logo:hover {
     color: #de2e54;
 }
-.header-logo-link:active {
+.site-logo:active {
     opacity: 0.6;
 }
-.logo-svg {
-    display: block;
+.site-logo-img {
+    margin-right: 16px;
 }
+
+/* NAVLIST STYLES */
 .nav-list {
     display: flex;
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
-.nav-item {
+.nav-item:not(:last-child) {
     margin-right: 32px;
-}
-.nav-item:last-child {
-    margin-right: 0;
 }
 .nav-link {
     font-weight: 700;
@@ -74,13 +82,15 @@ body {
 .nav-link:active {
     opacity: 0.6;
 }
+
+/* MAIN LINK STYLES */
 .main-link {
     display: inline-block;
     font-weight: 700;
     font-size: 15px;
     line-height: 150%;
     letter-spacing: 2px;
-    padding: 12px 24px;
+    padding: 10px 22px;
     text-decoration: none;
     text-transform: uppercase;
     border: 2px solid #de2e54;
@@ -99,7 +109,7 @@ body {
 }
 .header-main-link:hover {
     opacity: 1;
-    background-color: transparent;
+    background-color: #fff;
     color: #de2e54;
 }
 .header-main-link:active {
@@ -107,6 +117,8 @@ body {
     background-color:  #de2e54;
     color: #ffffff;
 }
+
+
 /* HERO */
 .hero {
     background-color: #0eb4c1;
@@ -137,6 +149,8 @@ body {
     width: 423px;
     height: 504px;
 }
+
+
 /* SERVICES */
 .services {
     padding: 120px  112px;
@@ -186,6 +200,8 @@ body {
 .services-link-wrapper {
     text-align: center;
 }
+
+
 /* CALL CENTER */
 .call-center {
     padding-top: 64px;
@@ -227,6 +243,8 @@ body {
 .call-center-link:last-child {
     margin-right: 0;
 }
+
+
 /* FOOTER */
 .site-footer {
     padding-top: 24px;
@@ -239,6 +257,9 @@ body {
     justify-content: space-between;
 }
 .footer-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     color: #ffffff;
     transition: color 0.4s ease,
         opacity 0.4s ease;
@@ -249,6 +270,10 @@ body {
 .footer-logo-link:active {
     color: #ffffff;
     opacity: 0.6;
+}
+.footer-logo-text {
+    margin-left: 16px;
+    font-size: 24px;
 }
 .footer-nav-list {
     display: flex;
