@@ -130,6 +130,8 @@ body {
 }
 .hero-content {
     width: 500px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .hero-heading {
     font-weight: 700;
@@ -146,6 +148,7 @@ body {
     color: #ffffff;
 }
 .hero-img {
+    align-self: flex-end;
     width: 423px;
     height: 504px;
 }
@@ -156,6 +159,7 @@ body {
     padding: 120px  112px;
 }
 .services-heading {
+    color: #000;
     font-size: 36px;
     line-height: 120%;
     margin-top: 0;
@@ -180,6 +184,7 @@ body {
     height: 200px;
     margin-right: 64px;
     border-radius: 24px;
+    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
     object-fit: cover;
 }
 .services-info-wrapper {
