@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- STYLES -->
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 <body>
     <!-- HEADER -->
@@ -22,16 +22,22 @@
                 <img class="site-logo-img" src="img/logo-icon.png" alt="AnsorMed logo icon" width="50" height="50" srcset="img/logo-icon.png 1x, img/logo-icon@2x.png 2x">
                 <span class="site-logo-text">AnsorMed</span>
             </a>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">Xizmatlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Dorilar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Asal</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kontaktlar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                </ul>
-            </nav>
-            <a class="header-main-link main-link" href="#call">Qabulga yozilish</a>
+
+            <button class="site-header__sitenav-toggler main-link" type="button">Menu</button>
+
+            <div class="site-header__sitenav">
+                <a class="site-header__sitenav-close" href="#">&#10005;</a>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#">Xizmatlar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dorilar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Asal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kontaktlar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <a class="header-main-link main-link" href="#call">Qabulga yozilish</a>
+            </div>
         </header>
     </div>
     <!-- MAIN -->
